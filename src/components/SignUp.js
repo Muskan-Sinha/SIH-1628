@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebaseconfig/firebaseconfig";
-import img from "../constant/image.png";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const navigate = useNavigate()
+
+  const handlethis = async (e) => {
+    e.preventDefault();
+    navigate("/signin")
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,12 +33,11 @@ const SignUp = () => {
       <div className="flex flex-col sm:flex-row rounded-2xl shadow-md border border-grey-300 w-full max-w-3xl bg-gradient-to-b from-[#0EBBA0] to-[#065549]">
   
         <div className="sm:w-[40%] text-white w-full p-5 flex flex-col items-center sm:items-start">
-          <p className="mb-3 text-5xl font-bold pt-10">LOGO.</p>
-            <p className="text-xl sm:text-4xl font-semibold py-6 sm:pb-16 text-center sm:text-left">
+          <p className="sm:mb-3 text-5xl font-bold pt-6 sm:pt-10">LOGO.</p>
+            <p className="text-xl sm:text-4xl font-semibold py-2 sm:py-6 sm:pb-16 text-center sm:text-left">
             Connect with Careers That Fit You Best</p>
         </div>
 
-        {/* Right Side - Sign Up Form */}
         <div className="bg-white sm:w-[60%] p-4 w-full sm:py-5 flex flex-col rounded-t-2xl sm:rounded-r-none sm:rounded-l-2xl items-center sm:p-2">
           <h2 className="text-2xl font-semibold sm:pt-10 mb-6">Create Account</h2>
           <form
@@ -72,13 +77,21 @@ const SignUp = () => {
               required
             />
             </div>
+            <div>
             <button
               type="submit"
-              className="w-full sm:w-72 mb-8 py-2 px-4 bg-[#065549] text-white font-semibold rounded-md hover:bg-green-600 transition duration-200"
+              className="w-56 sm:w-72 mb-8 py-2 px-4 bg-[#065549] text-white font-semibold rounded-md hover:bg-green-600 transition duration-200"
             >
               Sign Up
             </button>
+            </div>
           </form>
+          <div className="flex gap-2">   
+                 <p>Already have an account?</p>
+
+          
+          <button onClick={handlethis} className="text-blue-600"> Sign In</button>
+          </div>
         </div>
       </div>
     </div>
