@@ -6,17 +6,17 @@ import JobProviderDetails from "./forms/JobProviderDetails";
 import Home from "./components/Home";
 import JobRecmPage from "./components/JobRecmPage";
 import Navbar from "./components/Navbar";
-import Sidebar_desktop from "./components/Sidebar_desktop";
+import SidebarDesk from "./components/SidebarDesk";
 
 function App() {
   return (
-    <>
+    <div>
       <BrowserRouter>
         <div className="fixed w-full top-0 left-0 z-50">
           <Navbar />
         </div>
         <div className="flex">
-          <div className="md:w-[80%] md:h-screen scroll-hidden md:overflow-y-scroll">
+          <div className="md:w-[75%] lg:w-[84%] md:h-screen scroll-hidden md:overflow-y-scroll">
             <Routes>
               <Route path="/signup" element={<SignUp />} />
               <Route path="/signin" element={<SignIn />} />
@@ -29,12 +29,12 @@ function App() {
               <Route path="/jobrecommendations" element={<JobRecmPage />} />
             </Routes>
           </div>
-          <div className="w-[20%] md:pt-32 hidden md:block   h-screen overflow-y-scroll ">
-            <Sidebar_desktop />
+          <div className="w-[25%] lg:w-[16%] right-0 md:pt-32 hidden md:block h-screen ">
+            <SidebarDesk />
           </div>
         </div>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 
