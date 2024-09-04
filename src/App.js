@@ -4,6 +4,7 @@ import SignIn from "./components/SignIn";
 import JobPostingForm from "./forms/JobPostingForm";
 import JobProviderDetails from "./forms/JobProviderDetails";
 import Home from "./components/Home";
+import JobRecmPage from "./components/JobRecmPage";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/home" element={<Home/>}/>
         <Route path="/jobpostingform" element={<JobPostingForm/>}/>
         <Route path="/jobproviderdetails" element={<JobProviderDetails/>}/>
+        <Route path="/jobrecommendations" element={<JobRecmPage/>}/>
       </Routes>
     </BrowserRouter>
   );

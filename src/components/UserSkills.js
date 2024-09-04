@@ -1,7 +1,8 @@
 import React from 'react';
-import {SkillDB} from "../constants/SkillDB"
+import { SkillDB } from "../constants/SkillDB"
+import { FaPlus } from "react-icons/fa6";
 
-// Skill item component
+
 const SkillItem = ({ skill }) => {
   return (
     <div className={`p-4 border-b flex justify-between items-center ${skill.verified ? 'bg-green-100' : 'bg-white'}`}>
@@ -18,11 +19,16 @@ const SkillItem = ({ skill }) => {
   );
 };
 
-// Main skills display component
 const UserSkills = () => {
   return (
     <div className="max-w-5xl mx-auto mt-8 p-4 bg-white rounded shadow">
-      <h2 className="font-bold text-center mb-4 text-xl">{SkillDB.name} Skills</h2>
+      <div className='flex justify-between'>
+      <h2 className="font-bold mb-2 text-xl">{SkillDB.name} Skills</h2>
+      <div className='flex bg-green-800 m-2 text-white px-2 rounded-md'>
+      <p className='py-4 px-1'><FaPlus/></p>
+      <button className=''>Add skills</button>
+      </div>
+      </div>
       <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
         {SkillDB.skills.map((skill, index) => (
           <SkillItem key={index} skill={skill} />
