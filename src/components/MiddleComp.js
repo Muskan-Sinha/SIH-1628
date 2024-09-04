@@ -3,7 +3,7 @@ import UserSkills from "./UserSkills"
 
 const MiddleComp = () => {
     return (
-        <div>
+        <div className="">
             <hr className='text-[#908686]' />
             <ul className="grid grid-cols-1 text-white md:grid-cols-2 mx-6 font-medium">
                 <li className="bg-[#688a84] p-3 rounded-md text-center m-4">Take Competency test</li>
