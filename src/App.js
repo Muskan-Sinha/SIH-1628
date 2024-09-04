@@ -5,19 +5,36 @@ import JobPostingForm from "./forms/JobPostingForm";
 import JobProviderDetails from "./forms/JobProviderDetails";
 import Home from "./components/Home";
 import JobRecmPage from "./components/JobRecmPage";
+import Navbar from "./components/Navbar";
+import Sidebar_desktop from "./components/Sidebar_desktop";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/jobpostingform" element={<JobPostingForm/>}/>
-        <Route path="/jobproviderdetails" element={<JobProviderDetails/>}/>
-        <Route path="/jobrecommendations" element={<JobRecmPage/>}/>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <div className="fixed w-full top-0 left-0 z-50">
+          <Navbar />
+        </div>
+        <div className="flex">
+          <div className="md:w-[80%] md:h-screen scroll-hidden md:overflow-y-scroll">
+            <Routes>
+              <Route path="/signup" element={<SignUp />} />
+              <Route path="/signin" element={<SignIn />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/jobpostingform" element={<JobPostingForm />} />
+              <Route
+                path="/jobproviderdetails"
+                element={<JobProviderDetails />}
+              />
+              <Route path="/jobrecommendations" element={<JobRecmPage />} />
+            </Routes>
+          </div>
+          <div className="w-[20%] md:pt-32 hidden md:block   h-screen overflow-y-scroll ">
+            <Sidebar_desktop />
+          </div>
+        </div>
+      </BrowserRouter>
+    </>
   );
 }
 
