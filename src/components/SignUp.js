@@ -33,7 +33,7 @@ const SignUp = () => {
       <div className="flex flex-col sm:flex-row rounded-2xl shadow-md border border-grey-300 w-full max-w-3xl bg-gradient-to-b from-[#0EBBA0] to-[#065549]">
   
         <div className="sm:w-[40%] text-white w-full p-5 flex flex-col items-center sm:items-start">
-          <p className="sm:mb-3 text-5xl font-bold pt-6 sm:pt-10">LOGO.</p>
+          <p className="sm:mb-3 text-5xl font-bold pt-6 sm:pt-10">CareerAlly</p>
             <p className="text-xl sm:text-4xl font-semibold py-2 sm:py-6 sm:pb-16 text-center sm:text-left">
             Connect with Careers That Fit You Best</p>
         </div>
