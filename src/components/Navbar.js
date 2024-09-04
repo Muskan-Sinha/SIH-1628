@@ -12,7 +12,7 @@ const Navbar = () => {
                 </div>
             </div>
             <hr />
-            <div className="flex justify-around font-medium  bg-[#BEE0DA] ">
+            <div className="flex justify-around  bg-[#BEE0DA] ">
                 <p className="p-3 hover:bg-[#EAFFFC] rounded-md hover:px-6 hover:cursor-pointer">Training</p>
                 <p className="p-3 hidden sm:flex hover:bg-[#EAFFFC] rounded-md hover:px-6 hover:cursor-pointer">Skill Verification</p>
                 <p className="p-3 hover:bg-[#EAFFFC] rounded-md hover:px-6 hover:cursor-pointer">Resume Builder</p>

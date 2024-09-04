@@ -1,5 +1,5 @@
 import React from 'react';
-import img from "../constant/image2.png";
+import img from "../asset/image2.png";
 import MiddleComp from './MiddleComp';
 
 const TopBanner = () => {

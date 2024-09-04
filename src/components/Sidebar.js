@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className="flex justify-between items-center p-3">
         <button
           onClick={toggleMenu}
-          className="text-xl sm:hidden focus:outline-none"
+          className="text-xl sm:hidden focus:outline-none right-0"
         >
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>

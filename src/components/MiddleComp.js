@@ -1,3 +1,5 @@
+import UserSkills from "./UserSkills"
+
 const MiddleComp = () => {
     return (
         <div>
@@ -9,8 +11,11 @@ const MiddleComp = () => {
             <li className="bg-[#BEE0DA] p-3 rounded-md text-center m-4">Build Resume</li>
         </ul>
       <hr className='text-[#908686]'/>
+        <UserSkills/>
         </div>
     )
 }
+
+
 
 export default MiddleComp

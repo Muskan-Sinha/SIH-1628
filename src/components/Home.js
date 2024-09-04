@@ -1,4 +1,3 @@
-import MiddleComp from "./MiddleComp";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import TopBanner from "./TopBanner";
