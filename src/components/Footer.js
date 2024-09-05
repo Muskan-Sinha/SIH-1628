@@ -11,13 +11,13 @@ const Footer = () => {
                         <h2 className="text-2xl font-bold">CareerAlly</h2>
                         <p className="mt-2 text-sm md:w-44">Connecting you with your dream job and helping you grow professionally.</p>
                     </div>
-                    <div className="text-center md:text-left">
-                        <h3 className="text-lg font-semibold">Contact Us</h3>
-                        <div className='flex justify-center'>
+                    <div className=" md:text-left">
+                        <h3 className="text-lg px-1 font-semibold">Contact Us</h3>
+                        <div className='flex items-center'>
                             <p className='m-1 p-1'><MdEmail /></p>
                             <p className="mt-2 text-sm">Email: support@careerally.com</p>
                         </div>
-                        <div className='flex justify-center'>
+                        <div className='flex items-center'>
                             <p className='m-1 p-1'><FaPhoneAlt /></p>
                             <p className="mt-1 text-sm">Phone: +1 (555) 123-4567</p>
 
