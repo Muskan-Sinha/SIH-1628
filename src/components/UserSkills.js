@@ -1,6 +1,7 @@
 import React from "react";
 import { SkillDB } from "../constants/SkillDB";
 import { FaPlus } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const SkillItem = ({ skill }) => {
   return (
@@ -39,7 +40,9 @@ const UserSkills = () => {
       </div>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {SkillDB.skills.map((skill, index) => (
-          <SkillItem key={index} skill={skill} />
+          <Link to={"verify"}>
+            <SkillItem key={index} skill={skill} />
+          </Link>
         ))}
       </div>
     </div>

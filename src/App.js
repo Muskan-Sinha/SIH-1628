@@ -10,6 +10,7 @@ import SidebarDesk from "./components/SidebarDesk";
 import Footer from "./components/Footer";
 import TrainingRecomms from "./components/Trainingrecomms";
 import ResumeBuilder from "./components/ResumeBuilder";
+import SkillVerification from "./components/VerifySkills";
 
 function App() {
   return (
@@ -35,6 +36,8 @@ function App() {
                 element={<TrainingRecomms />}
               />
               <Route path="/resumebuilder" element={<ResumeBuilder />} />
+              <Route path="/verify" element={<SkillVerification />} />
+
             </Routes>
             <Footer />
           </div>
