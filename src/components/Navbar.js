@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const handleHome = (e) => {
     e.preventDefault();
-    navigate("/home")
+    navigate("/")
   }
 
   return (

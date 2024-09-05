@@ -5,12 +5,12 @@ import { FaPlus } from "react-icons/fa6";
 const SkillItem = ({ skill }) => {
   return (
     <div
-      className={`p-4 border-b flex justify-between items-center ${
+      className={`py-2 rounded-md px-4  border-b text-sm  flex justify-between items-center ${
         skill.verified ? "bg-green-100" : "bg-white"
       }`}
     >
       <div>
-        <p className="font-medium">{skill.skill_name}</p>
+        <p className="font-medium text-sm">{skill.skill_name}</p>
         <p className="text-sm text-gray-600">
           <span className="hidden sm:flex">Level: </span>
           {skill.level}
@@ -27,9 +27,11 @@ const UserSkills = () => {
   return (
     <div className="max-w-5xl mx-auto mt-8 p-4 bg-white rounded shadow">
       <div className="flex justify-between">
-        <h2 className="font-semibold md:font-bold mb-2 text-xl">{SkillDB.name} Skills</h2>
-        <div className="flex bg-[#4b7a73] m-2 text-white px-2 rounded-md">
-          <p className="py-4 px-1">
+        <h2 className="font-semibold md:font-bold mb-2 text-xl">
+          {SkillDB.name} Skills
+        </h2>
+        <div className="flex bg-[#4b7a73] text-sm items-center py-2    m-2  text-white px-2 rounded-md">
+          <p className="">
             <FaPlus />
           </p>
           <button className="">Add skills</button>
