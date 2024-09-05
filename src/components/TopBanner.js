@@ -14,7 +14,7 @@ const TopBanner = () => {
             Explore personalized career resources and tools tailored just for
             you. Let's take your professional journey to the next level!
           </p>
-          <button className="bg-[#086F5F] text-white px-6 py-2 font-semibold rounded-md text-center m-4">
+          <button className="bg-[#4b7a73] text-white px-6 py-2 font-semibold rounded-md text-center m-4">
             Jobs for you{" "}
           </button>
         </div>

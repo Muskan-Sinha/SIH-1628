@@ -24,7 +24,7 @@ const Sidebar = () => {
           isMenuOpen ? "flex" : "hidden"
         } flex-col sm:hidden bg-[#BEE0DA] text-center`}
       >
-        <ul className="bg-gradient-to-b h-[calc(100vh-6rem)] absolute w-44 right-0 mt-1 flex flex-col justify-around from-[#0EBBA0] to-[#065549] text-white">
+        <ul className="bg-gradient-to-b h-[calc(100vh-6rem)] absolute w-44 right-0 mt-2 flex flex-col justify-around from-[#0EBBA0] to-[#065549] text-white">
           <li className="text-center p-2">Blogs</li>
           <hr className="border-white" />
           <li className="text-center p-2">Career Advice</li>

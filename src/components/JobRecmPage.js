@@ -21,7 +21,7 @@ const JobItem = ({ job }) => {
 };
 const JobRecmPage = () => {
     return (
-        <div className="max-w-5xl mx-auto mt-8 p-4 bg-white rounded shadow">
+        <div className="max-w-5xl mx-auto mt-32 p-4 bg-white rounded shadow">
                 <h2 className="text-xl md:text-2xl font-semibold md:font-bold text-center border p-3 border-slate-400 shadow-md mb-6">Job Recommendations for You</h2>
             <div className='grid grid-cols-1 md:grid-cols-2'>
                 {JobDB.job_recommendations.map((job, index) => (

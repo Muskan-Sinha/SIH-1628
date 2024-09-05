@@ -3,7 +3,7 @@ import React from "react";
 const SidebarDesk = () => {
   return (
     <div className="  ">
-      <ul className="bg-gradient-to-b hidden sm:flex w-[100%] h-[calc(100vh-8.1rem)] flex-col justify-between md:flex from-[#0EBBA0] to-[#065549]  text-white">
+      <ul className="bg-gradient-to-b hidden sm:flex w-[100%] h-[calc(100vh-8.1rem)] flex-col justify-between from-[#0EBBA0] to-[#065549]  text-white">
 
         <li className="text-center p-2 pt-6 hover:cursor-pointer font-semibold ">
           Blogs

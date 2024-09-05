@@ -7,6 +7,9 @@ import Home from "./components/Home";
 import JobRecmPage from "./components/JobRecmPage";
 import Navbar from "./components/Navbar";
 import SidebarDesk from "./components/SidebarDesk";
+import Footer from "./components/Footer";
+import TrainingRecomms from "./components/Trainingrecomms";
+import ResumeBuilder from "./components/ResumeBuilder";
 
 function App() {
   return (
@@ -27,12 +30,15 @@ function App() {
                 element={<JobProviderDetails />}
               />
               <Route path="/jobrecommendations" element={<JobRecmPage />} />
+              <Route path= "/trainingrecommendations" element={<TrainingRecomms/>}/>
+              <Route path="/resumebuilder" element={<ResumeBuilder/>}/>
             </Routes>
           </div>
           <div className="w-[25%] lg:w-[16%] right-0 md:pt-32 hidden md:block h-screen ">
             <SidebarDesk />
           </div>
         </div>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
