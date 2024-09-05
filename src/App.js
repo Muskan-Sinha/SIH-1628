@@ -30,15 +30,18 @@ function App() {
                 element={<JobProviderDetails />}
               />
               <Route path="/jobrecommendations" element={<JobRecmPage />} />
-              <Route path= "/trainingrecommendations" element={<TrainingRecomms/>}/>
-              <Route path="/resumebuilder" element={<ResumeBuilder/>}/>
+              <Route
+                path="/trainingrecommendations"
+                element={<TrainingRecomms />}
+              />
+              <Route path="/resumebuilder" element={<ResumeBuilder />} />
             </Routes>
+            <Footer />
           </div>
           <div className="w-[25%] lg:w-[16%] right-0 md:pt-32 hidden md:block h-screen ">
             <SidebarDesk />
           </div>
         </div>
-        <Footer/>
       </BrowserRouter>
     </div>
   );
