@@ -44,7 +44,7 @@ const TrainingRecommendations = () => {
           View All
         </button>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
         {CoursesDB.training_recommendations.map((training, index) => {
           if (index >= 3) return null;
           return (

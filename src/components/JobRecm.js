@@ -37,7 +37,7 @@ const JobRecm = () => {
     navigate("/jobrecommendations");
   };
   return (
-    <div className=" mx-auto mt-8 p-4 bg-white rounded shadow">
+    <div className=" max-w-5xl mx-auto mt-8 p-4 bg-white rounded shadow">
       <div className="flex justify-between ">
         <h2 className="text-xl md:text-xl font-semibold md:font-bold  text-center mb-6">
           Job Recommendations for You
@@ -49,7 +49,7 @@ const JobRecm = () => {
           View All
         </button>
       </div>
-      <div className="grid grid-cols-1  md:grid-cols-3 ">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 ">
         {JobDB.job_recommendations.map((job, index) => {
           if (index >= 3) return null;
           return <JobItem key={job.job_id} job={job} />;

@@ -19,6 +19,11 @@ const Navbar = () => {
     navigate("/")
   }
 
+  const handleProfile = (e) => {
+    e.preventDefault();
+    navigate("/userprofile")
+  }
+
   return (
     <div className="">
       <div className="flex justify-between bg-white items-center">
@@ -26,7 +31,7 @@ const Navbar = () => {
           CareerAlly
         </p>
         <div className="flex">
-          <p className="p-3 text-2xl md:mr-16 hover:cursor-pointer">
+          <p onClick={handleProfile} className="p-3 text-2xl md:mr-16 hover:cursor-pointer">
             <FaRegUser />
           </p>
           <p className="sm:hidden right-0 ">

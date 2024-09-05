@@ -10,6 +10,7 @@ import SidebarDesk from "./components/SidebarDesk";
 import Footer from "./components/Footer";
 import TrainingRecomms from "./components/Trainingrecomms";
 import ResumeBuilder from "./components/ResumeBuilder";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               <Route path="/signup" element={<SignUp />} />
               <Route path="/signin" element={<SignIn />} />
               <Route path="/" element={<Home />} />
+              <Route path="/userprofile" element={<UserProfile/>}/>
               <Route path="/jobpostingform" element={<JobPostingForm />} />
               <Route
                 path="/jobproviderdetails"
