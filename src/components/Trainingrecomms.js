@@ -3,7 +3,7 @@ import { CoursesDB } from '../constants/CoursesDB';
 
 const TrainingItem = ({ training }) => {
     return (
-        <div className="p-4 mb-4 border rounded shadow-sm">
+        <div className="p-4 mb-4 border border-gray-300 rounded shadow-sm">
             <h3 className="text-xl font-bold">{training.course_title}</h3>
             <p className="text-gray-600">{training.provider}</p>
             <p className="text-sm text-gray-500">Duration: {training.duration}</p>
