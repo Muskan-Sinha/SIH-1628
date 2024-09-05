@@ -10,6 +10,8 @@ import SidebarDesk from "./components/SidebarDesk";
 import Footer from "./components/Footer";
 import TrainingRecomms from "./components/Trainingrecomms";
 import ResumeBuilder from "./components/ResumeBuilder";
+import SkillVerification from "./components/VerifySkills";
+import UserProfile from "./components/UserProfile";
 
 function App() {
   return (

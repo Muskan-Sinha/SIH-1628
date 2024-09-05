@@ -24,6 +24,11 @@ const Navbar = () => {
     navigate("/userprofile")
   }
 
+  const handleVerify = (e) => {
+    e.preventDefault();
+    navigate("/verify")
+  }
+
   return (
     <div className="">
       <div className="flex justify-between bg-white items-center">
@@ -44,10 +49,10 @@ const Navbar = () => {
       <button onClick={handleHome} className="p-3 transition-all text-sm font-semibold  hover:scale-110 rounded-md hover:cursor-pointer">
           Home
         </button>
-        <button onClick={handleTraining} className="p-3 hidden sm:flex  transition-all  text-sm font-semibold   hover:scale-110 rounded-md  hover:cursor-pointer">
+        <button onClick={handleTraining} className="p-3 hidden sm:flex transition-all text-sm font-semibold hover:scale-110 rounded-md hover:cursor-pointer">
           Training
         </button>
-        <button className="p-3 text-sm font-semibold  transition-all hover:scale-110 rounded-md hover:cursor-pointer">
+        <button onClick={handleVerify} className="p-3 text-sm font-semibold transition-all hover:scale-110 rounded-md hover:cursor-pointer">
           Skill Verification
         </button>
         <button onClick={handleJob} className="p-3 transition-all text-sm font-semibold  hover:scale-110 rounded-md hover:cursor-pointer ">
