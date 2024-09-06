@@ -12,6 +12,8 @@ import TrainingRecomms from "./components/Trainingrecomms";
 import ResumeBuilder from "./components/ResumeBuilder";
 import SkillVerification from "./components/VerifySkills";
 import UserProfile from "./components/UserProfile";
+import SignUpJobSeeker from "./components/SignUpJobSeeker";
+import SignUpJobProviderStep1 from "./components/SignUpJobProviderStep1";
 
 function App() {
   return (
@@ -26,12 +28,14 @@ function App() {
               <Route path="/signup" element={<SignUp />} />
               <Route path="/signin" element={<SignIn />} />
               <Route path="/" element={<Home />} />
-              <Route path="/userprofile" element={<UserProfile/>}/>
+              <Route path="/userprofile" element={<UserProfile />} />
               <Route path="/jobpostingform" element={<JobPostingForm />} />
               <Route
                 path="/jobproviderdetails"
                 element={<JobProviderDetails />}
               />
+              <Route path="/signup-jobseeker" element={<SignUpJobSeeker />} />
+              <Route path="/signup-jobprovider-step1" element={<SignUpJobProviderStep1 />} />
               <Route path="/jobrecommendations" element={<JobRecmPage />} />
               <Route
                 path="/trainingrecommendations"

@@ -1,6 +1,7 @@
 import { FaRegUser } from "react-icons/fa";
 import Sidebar from "./Sidebar";
 import { useNavigate } from "react-router-dom";
+import img from "../asset/Screenshot 2024-09-06 083106.png"
 
 const Navbar = () => {
 
@@ -32,9 +33,7 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="flex justify-between bg-white items-center">
-        <p className="px-3 py-6  ml-4 sm:ml-10 text-2xl font-semibold">
-          CareerAlly
-        </p>
+        <img src={img} className="w-36 h-12 ml-10" alt="" />
         <div className="flex">
           <p onClick={handleProfile} className="p-3 text-2xl md:mr-16 hover:cursor-pointer">
             <FaRegUser />

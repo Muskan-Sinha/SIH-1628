@@ -2,7 +2,7 @@ import React from "react";
 
 const JobProviderDetails = () => {
   return (
-    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-md mt-8">
+    <div className="max-w-4xl mx-auto p-6 bg-white shadow-lg rounded-md mt-32">
       <form>
         <div>
           <p className="text-center text-xl font-semibold mb-6">

@@ -52,6 +52,11 @@ const TrainingRecommendations = () => {
           );
         })}
       </div>
+      <div className="flex justify-end w-full">
+        <button className="sm:hidden text-blue-600" onClick={handlethis}>
+          View All
+        </button>
+      </div>
     </div>
   );
 };
